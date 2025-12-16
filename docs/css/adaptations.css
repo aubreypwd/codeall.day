@@ -2602,3 +2602,29 @@ nav.navigation {
 	position: relative;
 	z-index: -9999;
 }
+
+body.page {
+
+	height: 100vh;
+	max-height: 100vh;
+
+	main.wrapper {
+		min-height: 90vh;
+	}
+
+	& > footer {
+		min-height: 15vh;
+	}
+
+	main {
+		padding: 10rem 0 0;
+	}
+
+	.wrapper .section > header h2 + p {
+		font-family: inherit;
+		font-size: inherit;
+		text-transform: inherit;
+		letter-spacing: inherit;
+		line-height: inherit;
+	}
+}

@@ -1857,3 +1857,6 @@ readers do not read off random characters that represent icons */
 
   .fa-map-marker-alt:before {
     content: "\f3c5"; }
+
+.fa-home:before {
+  content: "\f015"; }

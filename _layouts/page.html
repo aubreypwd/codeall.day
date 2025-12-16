@@ -7,21 +7,27 @@
 
 	<body class="page">
 
-		{% include header.html %}
+		{% include header.html nav=false %}
 
 		<main class="wrapper" role="main">
-			<section class="section">
 
-				<header>
-					<h2>{{ page.heading }}</h2>
-				</header>
+				<section class="section">
+					<header>
+						<h2>
+							{{ page.title }}
+						</h2>
+					</header>
 
-				<div class="content">
+					<div class="content">
 
-					{{ content }}
+						<p>This is my typical processes working with clients&mdash;<b>your experience may vary</b>&mdash;but for the most part we follow this.</p>
 
-				</div>
-			</section>
+						<p><a href="{{ site.url }}">&larr; <i class="fa fa-home"></i>Back Home</a></p>
+
+					</div>
+				</section>
+
+				{{ content }}
 		</main>
 
 		{%  include footer.html %}

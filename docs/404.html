@@ -2627,6 +2627,32 @@ nav.navigation {
 	z-index: -9999;
 }
 
+body.page {
+
+	height: 100vh;
+	max-height: 100vh;
+
+	main.wrapper {
+		min-height: 90vh;
+	}
+
+	& > footer {
+		min-height: 15vh;
+	}
+
+	main {
+		padding: 10rem 0 0;
+	}
+
+	.wrapper .section > header h2 + p {
+		font-family: inherit;
+		font-size: inherit;
+		text-transform: inherit;
+		letter-spacing: inherit;
+		line-height: inherit;
+	}
+}
+
 	/*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4487,6 +4513,9 @@ readers do not read off random characters that represent icons */
   .fa-map-marker-alt:before {
     content: "\f3c5"; }
 
+.fa-home:before {
+  content: "\f015"; }
+
 
 	/* @TODO: Going to need to figure out how to do this: it needs to only be there for lighthouse. */
 	/*input[type=submit].primary, input[type=reset].primary, input[type=button].primary, button.primary, .button.primary{ color: black !important; background-color: white; border: 2px solid black; }*/
@@ -4544,109 +4573,29 @@ readers do not read off random characters that represent icons */
 	<p>Performance-first web developer with over a decade of experience.</p>
 </header>
 
-<nav class="navigation" role="navigation">
-	<ul>
-		<style>
-			body[data-hash="do"] {
-				nav.navigation a[href="#do"] {
-					color: var(--dark-primary-bg);
-				}
-			}
 
-			@media screen and (min-width: 1152px) {
-				body[data-hash="do"] {
-					nav.navigation li.do {
-						background-color: #ffffff1c;
-					}
-
-					nav.navigation a[href="#do"] {
-						color: white;
-					}
-				}
-			}
-		</style>
-		<li class="do"><a href="#do" class="scrolly">What I Do</a></li>
-
-		<style>
-			body[data-hash="about"] {
-				nav.navigation a[href="#about"] {
-					color: var(--dark-primary-bg);
-				}
-			}
-
-			@media screen and (min-width: 1152px) {
-				body[data-hash="about"] {
-					nav.navigation li.about {
-						background-color: #ffffff1c;
-					}
-
-					nav.navigation a[href="#about"] {
-						color: white;
-					}
-				}
-			}
-		</style>
-		<li class="about"><a href="#about" class="scrolly">About</a></li>
-
-		<style>
-			body[data-hash="work"] {
-				nav.navigation a[href="#work"] {
-					color: var(--dark-primary-bg);
-				}
-			}
-
-			@media screen and (min-width: 1152px) {
-				body[data-hash="work"] {
-					nav.navigation li.work {
-						background-color: #ffffff1c;
-					}
-
-					nav.navigation a[href="#work"] {
-						color: white;
-					}
-				}
-			}
-		</style>
-		<li class="work"><a href="#work" class="scrolly">Experience</a></li>
-
-		<style>
-			body[data-hash="contact"] {
-				nav.navigation a[href="#contact"] {
-					color: var(--dark-primary-bg);
-				}
-			}
-
-			@media screen and (min-width: 1152px) {
-				body[data-hash="contact"] {
-					nav.navigation li.contact {
-						background-color: #ffffff1c;
-					}
-
-					nav.navigation a[href="#contact"] {
-						color: white;
-					}
-				}
-			}
-		</style>
-		<li class="contact"><a href="#contact" class="scrolly">Contact</a></li>
-	</ul>
-</nav>
 
 
 		<main class="wrapper" role="main">
-			<section class="section">
 
-				<header>
-					<h2>Page Not Found</h2>
-				</header>
+				<section class="section">
+					<header>
+						<h2>
+							Page Not Found
+						</h2>
+					</header>
 
-				<div class="content">
+					<div class="content">
 
-					<p>Sorry, but the page you are looking for wasn’t found.</p>
+						<p>This is my typical processes working with clients—<b>your experience may vary</b>—but for the most part we follow this.</p>
 
+						<p><a href="http://localhost:4000">← <i class="fa fa-home"></i>Back Home</a></p>
 
-				</div>
-			</section>
+					</div>
+				</section>
+
+				<p>Sorry, but the page you are looking for wasn’t found.</p>
+
 		</main>
 
 		<footer class="wrapper">
