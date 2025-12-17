@@ -6,14 +6,9 @@
 		<link
 			rel="preload"
 			as="image"
-			href="{{ 'images/webp/aubrey-portwood-sm.webp' | relative_url }}"
-			fetchpriority="high">
-
-		<link
-			rel="preload"
-			as="image"
 			href="{{ 'images/webp/aubrey-portwood-lg.webp' | relative_url }}"
-			fetchpriority="high">
+			fetchpriority="high"
+			onload="if ( window.matchMedia('(min-width: 767px)').matches ) document.querySelector( '.lcp-image' ).src=this.getAttribute( 'href' )">
 
 		{% include head.html %}
 	</head>
