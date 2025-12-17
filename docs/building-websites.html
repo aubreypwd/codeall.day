@@ -2705,7 +2705,7 @@ body.page {
 
 			display: block;
 
-			&::last-child {
+			.content *:last-child {
 				margin-bottom: 0;
 			}
 		}
@@ -4641,13 +4641,15 @@ readers do not read off random characters that represent icons */
 	<header>
 		<h2><a href="/building-websites.html">Building Websites</a></h2>
 
-		<p>
-			This is my typical process, it will <b>vary for each project</b>, but we'll generally follow this process.
-		</p>
+		<div class="content">
+			<p>
+				This is my typical process, it will <b>vary for each project</b>, but we'll generally follow this process.
+			</p>
 
-		<p>
-			<a class="upper" title="Back to codeall.day" href="http://localhost:4000">←  <i class="fa fa-home"></i><b>codeall.day</b></a>
-		</p>
+			<p>
+				<a class="upper" title="Back to codeall.day" href="http://localhost:4000">←  <i class="fa fa-home"></i><b>codeall.day</b></a>
+			</p>
+		</div>
 
 	</header>
 
