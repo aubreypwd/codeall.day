@@ -3,9 +3,13 @@ description: "Aubrey Portwood is a web developer that builds with a performance-
 email: "nobody@example.com"
 baseurl: ""
 absolute_url: "https://hire.aubreypwd.com"
+url: "https://hire.aubreypwd.com"
 default_domain: hire.aubreypwd.com
 destination: docs
 job_title: Performance-first web developer
 keywords: custom web development, wordpress expert, wordpress performance, seo expert albuquerque, senior wordpress developer, web developer new mexico, performance web developer, fast website, core web vitals, custom wordpress plugins, albuquerque web developer, wordpress speed optimization, technical seo, php developer, new mexico websites
 exclude:
   - .sublime-workspace
+timezone: America/Denver
+plugins:
+  - jekyll-last-modified-at
