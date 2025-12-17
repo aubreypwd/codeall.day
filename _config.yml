@@ -2,7 +2,7 @@ title: "Aubrey Portwood - Performance-first web developer"
 description: "Aubrey Portwood is a web developer that builds with a performance-first mindset from start to finish with over a decade of experience."
 email: "nobody@example.com"
 baseurl: ""
-url: "https://hire.aubreypwd.com"
+absolute_url: "https://hire.aubreypwd.com"
 default_domain: hire.aubreypwd.com
 destination: docs
 job_title: Performance-first web developer
