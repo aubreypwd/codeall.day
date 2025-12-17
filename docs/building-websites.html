@@ -2048,9 +2048,9 @@ body.fonts-loaded {
 }
 
 #intro h2 {
-	font-size: 5rem;
 	font-style: normal;
-	line-height: 0.5;
+						font-size: clamp(3rem,6vw,5rem);
+
 }
 
 #intro p {
@@ -2521,8 +2521,35 @@ nav.navigation {
 	}
 
 	/* Mobile Only */
-
 	@media screen and (max-width: 1152px) {
+
+		/* Mobile-only intro-header */
+		#intro > header {
+
+			.intro-name {
+
+				max-height: 5rem;
+				overflow: visible;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				h2 {
+					padding-right: 1rem;
+				}
+
+				img {
+					border-radius: 50%;
+					min-height: 90px;
+					height: 20vw;
+					border: 1px solid var(--highlight);
+				}
+			}
+		}
+
+		#intro > .content {
+			display: none; /* Hide the LCP image on mobile */
+		}
 
 		.desktop {
 			display: none !important;
