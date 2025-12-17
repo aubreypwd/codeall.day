@@ -2008,6 +2008,7 @@ body .intro-down-arrow {
 .wrapper:before {
 	background-color: var(--dark-primary-bg);
 	background-image: url( 'css/images/background.svg' );
+	background-image: none;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -2506,6 +2507,7 @@ nav.navigation {
 		.wrapper > .section > header {
 			background-color: var(--dark-primary-bg);
 			background-image: url( 'css/images/background.svg' );
+			background-image: none;
 			background-size: cover;
 			background-position: top left;
 			background-repeat: no-repeat;
