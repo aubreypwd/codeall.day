@@ -18,14 +18,10 @@ layout: home
 
 	<div class="content">
 		<span class="image fill" data-position="center">
-
-
-				<!-- fallback (also used if <picture> not supported) -->
-				<img
-					src="{% base64 images/webp/aubrey-portwood-lg.webp %}"
-					alt="Aubrey Portwood"
-				>
-
+			<img
+				src="{{ 'images/webp/aubrey-portwood-lg.webp' | base64_image_src }}"
+				alt="Aubrey Portwood"
+			>
 		</span>
 	</div>
 </section>
