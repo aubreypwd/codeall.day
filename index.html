@@ -276,7 +276,7 @@ layout: home
 
 		<form action="https://formsubmit.co/email@{{ site.default_domain }}" method="post">
 
-			<input type="hidden" name="_next" value="{{ site.url }}?sent#contact">
+			<input type="hidden" name="_next" value="{{ baseurl | relative_url }}?sent#contact">
 			<input type="hidden" name="_subject" value="codeall.day">
 
 			<div class="fields">
