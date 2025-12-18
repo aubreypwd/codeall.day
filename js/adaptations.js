@@ -69,5 +69,9 @@
 		}
 	} );
 
+	// Tooltips.
+	$( '.tooltip-icon' ).on( 'click', function() {
+		$( '.modal', this ).toggleClass( 'visible' );
+	} );
 
 } )( jQuery );
