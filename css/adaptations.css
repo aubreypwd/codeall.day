@@ -2620,9 +2620,6 @@ nav.navigation {
 
 body.page {
 
-	height: 100vh;
-	max-height: 100vh;
-
 	main.wrapper {
 		min-height: 90vh;
 	}
