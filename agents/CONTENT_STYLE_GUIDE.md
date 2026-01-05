@@ -187,6 +187,155 @@ This document provides instructions for AI agents and editors to maintain consis
 - Use `&` directly (not `&amp;`)
 - Use `&rarr;` for arrows
 
+## Writing for Non-Technical Audiences
+
+When writing process documentation, educational content, or explaining workflows to clients, follow these principles to ensure clarity and accessibility.
+
+### The "Grandma Test"
+- **Write so even a grandma will understand**: Use everyday language, avoid jargon
+- **Explain technical terms**: When introducing technical concepts, explain them simply and accurately
+- **Use analogies**: Compare technical concepts to familiar things (e.g., "Think of it like a table of contents for your website")
+- **Avoid acronyms**: Spell out terms instead of using acronyms (e.g., "statement of work" not "SOW")
+
+### Technical Term Guidelines
+
+#### Always Explain Technical Terms
+When first introducing a technical term, provide a simple, accurate explanation:
+
+**Good Examples:**
+- `I'll create a **stylescape**—a single image that shows the visual direction for your site. Think of it as a preview of the colors, fonts, photography style, and overall look and feel we're going for.`
+- `I'll create a clear sitemap showing the structure of your site (yes, even for one-page sites) and all the pages we're building. Think of it like a table of contents for your website.`
+- `I'll create a moodboard—a collection of images, colors, and design inspiration that sets the tone for your site.`
+
+#### Avoid Unnecessary Technical Details
+Don't include technical implementation details that don't help the reader understand the process:
+
+**Bad:** `During this phase we'll get the site up on a staging server and start connecting everything...`
+**Good:** `Together, we'll test everything: layout, content, links, forms, and how everything works.`
+
+**Bad:** `For five working days after launch...`
+**Good:** `For one week after launch...` (The specific detail about working days belongs in the contract, not the process explanation)
+
+### Language Choices for Clarity
+
+#### Use Full Terms, Not Acronyms
+- ❌ "SOW" → ✅ "statement of work"
+- ❌ "SLA" → ✅ "service level agreement" (if needed)
+- ❌ "CMS" → ✅ "content management system" (if needed, with explanation)
+
+#### Use Simple Time References
+- ❌ "five working days" → ✅ "one week" (unless the distinction is critical for the reader)
+- ❌ "15 business days" → ✅ "15 days" or "about three weeks"
+
+#### Use Plain Language for Processes
+- ❌ "deploy to production" → ✅ "launch" or "go live"
+- ❌ "staging environment" → ✅ (just say "testing" or remove entirely)
+- ❌ "domain name system" → ✅ "domain name" or "web address"
+
+### Balance: Concise but Not Vague
+
+**Find the sweet spot:**
+- **Too vague:** "We'll work on your site"
+- **Too wordy:** "We'll engage in a comprehensive development process involving multiple iterations of design and code implementation across various pages and components"
+- **Just right:** "I'll develop your homepage first, then the rest of your core pages"
+
+**Guidelines:**
+- Include enough detail that the reader understands what's happening
+- Don't include so much detail that it becomes overwhelming
+- Focus on what the client needs to know, not technical implementation
+
+### Process Documentation Structure
+
+When documenting a multi-step process:
+
+1. **Use clear, descriptive headings** for each step
+2. **Explain what happens** at each stage
+3. **Clarify who does what** (what I do vs. what the client does)
+4. **Include timing expectations** (24 hours, one week, etc.)
+5. **Set clear expectations** about revisions, feedback windows, etc.
+6. **Use consistent formatting** for similar information (e.g., payment milestones)
+
+**Example Structure:**
+```markdown
+#### Step Name
+
+Brief explanation of what happens in this step and why it matters.
+
+- What I'll do
+- What you'll need to do
+- Timeline expectations
+- Any limitations or constraints (e.g., "one revision")
+```
+
+### Revision and Feedback Clarity
+
+When explaining revision processes, be explicit:
+
+**Good:**
+- `You'll get **one round of feedback** on the homepage, and I'll need that feedback within 24 hours.`
+- `You get **one revision** of both the sitemap and the stylescape. After I make those changes and send them back, you'll approve them so we can move forward.`
+- `You'll get **one final revision** for everything before we launch. This is for minor tweaks—not major changes.`
+
+**Avoid:**
+- Vague language like "we'll iterate" or "we'll refine"
+- Not specifying revision limits
+- Not clarifying what types of changes are acceptable
+
+### Examples from Process Content
+
+#### Explaining Technical Concepts Simply
+
+**Stylescape:**
+```markdown
+I'll create a **stylescape**—a single image that shows the visual direction for your site. Think of it as a preview of the colors, fonts, photography style, and overall look and feel we're going for.
+```
+
+**Sitemap:**
+```markdown
+I'll create a clear sitemap showing the structure of your site (yes, even for one-page sites) and all the pages we're building. Think of it like a table of contents for your website.
+```
+
+**Moodboard:**
+```markdown
+I'll create a moodboard—a collection of images, colors, and design inspiration that sets the tone for your site. I might share this with you, or I might use it just for my own reference.
+```
+
+#### Removing Unnecessary Technical Details
+
+**Before (too technical):**
+```markdown
+During this phase we'll get the site up on a staging server and start connecting everything needed to make it work (forms, integrations, payment gateways if applicable, analytics, etc.).
+```
+
+**After (clear and simple):**
+```markdown
+Together, we'll test everything: layout, content, links, forms, and how everything works. I'll do deeper testing on my end, and we'll test together to make sure everything looks great and works correctly.
+```
+
+#### Using Full Terms Instead of Acronyms
+
+**Before:**
+```markdown
+Once you accept the proposal, I'll prepare a SOW (statement of work)...
+```
+
+**After:**
+```markdown
+Once you accept the proposal, I'll prepare a statement of work (a contract that outlines everything we agreed to)...
+```
+
+### Checklist for Non-Technical Content
+
+When writing process or educational content, verify:
+- [ ] All technical terms are explained when first introduced
+- [ ] No acronyms are used without spelling them out first
+- [ ] Technical implementation details are removed (unless critical for understanding)
+- [ ] Time references are simple and clear ("one week" not "five working days")
+- [ ] Revision limits and expectations are explicitly stated
+- [ ] The content passes the "grandma test" (would a non-technical person understand this?)
+- [ ] Analogies or comparisons are used to explain complex concepts
+- [ ] The balance between concise and detailed is appropriate
+
 ## Review Checklist
 
 When editing content, verify:
@@ -200,6 +349,7 @@ When editing content, verify:
 - [ ] Periods at end of complete sentences
 - [ ] Commas used appropriately for readability
 - [ ] Writing maintains conversational, direct tone
+- [ ] For process/educational content: Technical terms are explained, no unnecessary acronyms, passes "grandma test"
 
 ## Examples
 
@@ -218,4 +368,6 @@ Yes, it's **lengthy**—but that's intentional. Many clients find the process it
 ---
 
 **Remember**: The goal is to maintain a consistent, conversational, and professional tone that feels personal and direct. When in doubt, read the content aloud—it should sound natural and authentic.
+
+
 
