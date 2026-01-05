@@ -1,7 +1,3 @@
-<a href="/#do">&larr; <i class="fa fa-home"></i> Home</a>
-
----
-
 {% if page.articles and page.articles.size > 1 %}
 #### In this document
 <ul>

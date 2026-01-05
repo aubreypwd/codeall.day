@@ -138,5 +138,3 @@ Most communication happens over Zoom or Google Meet, and normal text-messaging.
 **Ready to work together?** &mdash; <a href="/#contact" class="strong">Contact me</a> and let's get started!
 
 ---
-
-<a href="/#do">&larr; <i class="fa fa-home"></i> Home</a>
