@@ -1,0 +1,47 @@
+<section id="{{ include.id }}" class="distant section">
+
+	<header>
+		<h2><a href="#{{ include.id }}">{{ include.heading }}</a></h2>
+
+		{% if include.header_content %}
+			{% include md.html md={{ include.header_content }} %}
+		{% endif %}
+	</header>
+
+	<div class="content">
+
+		{% if include.content %}
+			{% include md.html md=include.content %}
+		{% endif %}
+
+		{% for article in page.articles %}
+
+			{% assign id = article[0] %}
+			{% assign article_data = article[1] %}
+
+			<article id="{{ id }}" class="section">
+				<header>
+					<h3>
+						{% if article_data.heading %}
+							<a href="#{{ id }}">{{ article_data.heading }}</a>
+						{% else %}
+							No <code>heading:</code> specified.
+						{% endif %}
+					</h3>
+
+					{% if article_data.header_content %}
+						{% include md.html md=article_data.header_content %}
+					{% endif %}
+				</header>
+
+				<div class="content">
+					{% if article_data.content %}
+						{% include md.html md=article_data.content %}
+					{% else %}
+						<p>No <code>content:</code> specified</p>
+					{% endif %}
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</section>

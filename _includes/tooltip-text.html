@@ -1,0 +1,16 @@
+<span class="tooltip-text" aria-label="Click for more info." title="Click for more info.">
+	{{ include.text | strip_html }}
+	<span class="modal loaded tooltip" tabindex="-1" role="tooltip">
+		<span class="tooltip-content inner">
+			{% if include.tooltip_md %}
+
+				{% capture markdown %}{% include {{ include.tooltip_md }} %}{% endcapture %}
+				{% capture content %}{{ markdown | markdownify }}{% endcapture %}
+
+				{{ content }}
+			{% else %}
+				{{ include.tooltip | markdownify }}
+			{% endif %}
+		</span>
+	</span>
+</span>

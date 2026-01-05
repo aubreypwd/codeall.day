@@ -1,0 +1,14 @@
+<section id="{{ include.id }}" class="section">
+
+	<header class="desktop">
+		<h2><a href="#{{ include.id }}">{{ include.heading }}</a></h2>
+
+		{% include md.html md=include.header_content %}
+	</header>
+
+	<div class="content">
+
+		{% include md.html md=include.content %}
+
+	</div>
+</section>
