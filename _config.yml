@@ -1,12 +1,12 @@
-title: "Aubrey Portwood - Performance-first web developer"
-description: "Aubrey Portwood is a web developer that builds with a performance-first mindset from start to finish with over a decade of experience."
+title: "Aubrey Portwood - A web developer who feels like a friend.."
+description: "For over a decade, I built websites for agencies and companies and often had to say no when friends asked for help. Now I work directly with people who want honest guidance, clear explanations, and work that actually makes sense for their goals. No fluff, no pressure—just the kind of help you'd expect from someone who's on your side."
 email: "nobody@example.com"
 baseurl: ""
 absolute_url: "https://hire.aubreypwd.com"
 url: "https://hire.aubreypwd.com"
 default_domain: hire.aubreypwd.com
 destination: docs
-job_title: Performance-first web developer
+job_title: A web developer who feels like a friend.
 keywords: custom web development, wordpress expert, wordpress performance, seo expert albuquerque, senior wordpress developer, web developer new mexico, performance web developer, fast website, core web vitals, custom wordpress plugins, albuquerque web developer, wordpress speed optimization, technical seo, php developer, new mexico websites
 exclude:
   - .sublime-workspace
