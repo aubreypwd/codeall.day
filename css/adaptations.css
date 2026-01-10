@@ -2155,6 +2155,21 @@ input:user-invalid {
 
 /* === Lists === */
 
+ul.pills {
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		padding: 0.5rem 0.7rem;
+		margin: 0.3rem;
+		background-color: #f4f4f4;
+		border-radius: 10px;
+		font-weight: bold;
+		font-size: 0.85rem;
+	}
+}
+
 ul.feature-icons {
 
 	font-size: 0.85rem;
@@ -2246,7 +2261,7 @@ img {
 	background-color: var(--highlight);
 	display: inline-block;
 	padding: 0 0.5rem;
-	margin: 0;
+	margin: 0 0.1rem;
 	border-radius: 3px;
 
 	&.no-bg {
