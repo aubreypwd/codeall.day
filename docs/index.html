@@ -12,7 +12,7 @@
 </script>
 
 
-<title>Aubrey Portwood - A web developer who feels like a friend..</title>
+<title>Aubrey Portwood - That friend who knows a lot about websites..</title>
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -1232,6 +1232,10 @@ input, textarea {
 		list-style: none;
 		margin: 3rem 0;
 		padding-left: 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 
 		ul.feature-icons li {
@@ -1324,7 +1328,7 @@ input, textarea {
 					margin: 0 0 5rem 0;
 				}
 
-				.wrapper .section > header h2 + p {
+				.wrapper .section#intro > header h2 + p {
 					font-family: "Raleway", Helvetica, sans-serif;
 					font-size: 0.8rem;
 					letter-spacing: 0.175em;
@@ -1609,7 +1613,7 @@ input, textarea {
 						justify-self: start;
 						padding: 0;
 						text-align: left;
-						width: 100%;
+						/* width: 100%; */
 					}
 
 						.wrapper .section > header ul.actions {
@@ -2020,7 +2024,7 @@ a.arrow:before {
 /* === The big down arrow === */
 
 body .intro-down-arrow {
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 /* === Layout & Wrapper === */
@@ -2054,10 +2058,6 @@ body .intro-down-arrow {
 .section > header *,
 .section > footer * {
 	color: white;
-}
-
-.wrapper .section > header {
-	width: auto;
 }
 
 .wrapper > .section > .content > .section > header {
@@ -2118,6 +2118,7 @@ label {
 
 header .highlight {
 	text-shadow: none;
+	color: black;
 }
 
 /* === Content === */
@@ -2180,6 +2181,25 @@ input:user-invalid {
 }
 
 /* === Lists === */
+
+ul.pills {
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		padding: 0.3rem 0.7rem;
+		margin: 0.3rem;
+		background-color: #f4f4f4;
+		border-radius: 10px;
+		font-weight: bold;
+		font-size: 0.85rem;
+
+		&.hl {
+			background-color: var(--highlight);
+		}
+	}
+}
 
 ul.feature-icons {
 
@@ -2272,7 +2292,7 @@ img {
 	background-color: var(--highlight);
 	display: inline-block;
 	padding: 0 0.5rem;
-	margin: 0;
+	margin: 0 0.1rem;
 	border-radius: 3px;
 
 	&.no-bg {
@@ -2440,6 +2460,14 @@ nav.navigation {
 
 	@media screen and (min-width: 1152px) {
 
+		ul.feature-icons {
+
+			&:first-child li:nth-child(1),
+			&:first-child li:nth-child(2) {
+				margin-top: 0;
+			}
+		}
+
 		.mobile {
 			display: none !important;
 		}
@@ -2512,6 +2540,18 @@ nav.navigation {
 
 	/* Mobile Only */
 	@media screen and (max-width: 1152px) {
+
+		.modal > .inner {
+			max-width: 100% !important;
+			height: 100% !important;
+		}
+
+		ul.feature-icons {
+
+			&:first-child {
+				margin-top: -3rem;
+			}
+		}
 
 		.desktop {
 			display: none !important;
@@ -2597,7 +2637,7 @@ nav.navigation {
 			text-align: left;
 		}
 
-		.wrapper > .section:not(#intro) > header {
+		.wrapper > .section:not(#intro) > header.has-skip:not(.has-content) {
 
 			display: flex;
 			justify-content: space-between; /* one left, one right */
@@ -2670,7 +2710,7 @@ body.page {
 		}
 	}
 
-	.wrapper .section > header h2 + p {
+	.wrapper .section#intro > header h2 + p {
 		font-family: inherit;
 		font-size: inherit;
 		text-transform: inherit;
@@ -2804,8 +2844,8 @@ body.page {
 	/*font-size: 0.85rem;*/
 	/*line-height: 1rem;*/
 	display: inline;
-	cursor: pointer;
-	border-bottom: 1px dashed #000;
+	cursor: help;
+	border-bottom: 1px dotted #000;
 	text-wrap-style: balance;
 
 	&::after {
@@ -2959,7 +2999,7 @@ body.page {
 			width: 4rem;
 		}
 
-		.modal .inner {
+		.modal > .inner {
 			-moz-transform: translateY(0.75rem);
 			-webkit-transform: translateY(0.75rem);
 			-ms-transform: translateY(0.75rem);
@@ -2969,9 +3009,15 @@ body.page {
 			-ms-transition: opacity 0.25s ease, -ms-transform 0.25s ease;
 			transition: opacity 0.25s ease, transform 0.25s ease;
 			opacity: 0;
+			display: flex;
+			align-items: center;
+
+			& > p {
+				text-align: center;
+			}
 		}
 
-			.modal .inner img {
+			.modal > .inner img {
 				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 				display: block;
 				max-height: 90vh;
@@ -3009,7 +3055,7 @@ body.page {
 			opacity: 0;
 		}
 
-		.modal .inner {
+		.modal > .inner {
 			background-color: white;
 			padding: 2rem 4rem;
 			border-radius: 4px;
@@ -3018,6 +3064,7 @@ body.page {
 			font-weight: 400;
 			line-height: 1.5rem;
 			max-width: 50vw;
+			height: auto;
 			font-size: 1rem;
 			line-height: 1.3rem;
 
@@ -3028,7 +3075,7 @@ body.page {
 		}
 
 	@media screen and (max-width: 1152px) {
-		.modal .inner * {
+		.modal > .inner * {
 			max-width: 100vw;
 		}
 	}
@@ -13310,7 +13357,7 @@ readers do not read off random characters that represent icons */
 	/*input[type=submit].primary, input[type=reset].primary, input[type=button].primary, button.primary, .button.primary{ color: black !important; background-color: white; border: 2px solid black; }*/
 </style>
 
-<meta property="og:title" content="Aubrey Portwood - A web developer who feels like a friend..">
+<meta property="og:title" content="Aubrey Portwood - That friend who knows a lot about websites..">
 <meta property="og:description" content="For over a decade, I built websites for agencies and companies and often had to say no when friends asked for help. Now I work directly with people who want honest guidance, clear explanations, and work that actually makes sense for their goals. No fluff, no pressure—just the kind of help you'd expect from someone who's on your side.">
 <meta property="og:image" content="images/webp/aubrey-portwood.webp">
 <meta property="og:url" content=".">
@@ -13324,7 +13371,7 @@ readers do not read off random characters that represent icons */
 		"@context": "https://schema.org",
 		"@type": "Person",
 		"name": "Aubrey Portwood",
-		"jobTitle": "A web developer who feels like a friend.",
+		"jobTitle": "That friend who knows a lot about websites.",
 		"url": ".",
 		"image": "images/webp/aubrey-portwood.webp",
 		"homeLocation": {
@@ -13385,28 +13432,7 @@ readers do not read off random characters that represent icons */
 					}
 				}
 			</style>
-			<li class="do"><a href="#do" class="scrolly">How I Help</a></li>
-
-			<style>
-				body[data-hash="about"] {
-					nav.navigation a[href="#about"] {
-						color: var(--dark-primary-bg);
-					}
-				}
-
-				@media screen and (min-width: 1152px) {
-					body[data-hash="about"] {
-						nav.navigation li.about {
-							background-color: #ffffff1c;
-						}
-
-						nav.navigation a[href="#about"] {
-							color: white;
-						}
-					}
-				}
-			</style>
-			<li class="about"><a href="#about" class="scrolly">About</a></li>
+			<li class="do"><a href="#do" class="scrolly">What I do</a></li>
 
 			<style>
 				body[data-hash="work"] {
@@ -13462,7 +13488,7 @@ readers do not read off random characters that represent icons */
 
 		<h2>I'm Aubrey</h2>
 
-		<p>A web developer who feels like a <i>friend.</i></p>
+		<p>That friend with serious web experience that's available to help</p>
 
 		<ul class="actions intro-down-arrow">
 			<li><a href="#do" title="What I Do" class="scrolly arrow bounce"><i aria-hidden="true" class="fas fa-arrow-down"></i></a></li>
@@ -13479,85 +13505,112 @@ readers do not read off random characters that represent icons */
 <!-- What I Do Section -->
 <section id="do" class="section">
 
-	<header class="desktop">
-		<h2><a href="#do">How I help</a></h2>
+	<header class="has-content">
+		<h2><a href="#do">What I do</a></h2>
+
+		<p>
+			You know that <b>friend</b> who knows a lot about websites but never had the time to jump in because
+			they were busy at a <strong>9-to-5?</strong>
+		</p>
+
+		<p>
+			For over a <strong class="highlight">decade</strong> I honed my craft working with agencies and
+			companies helping them build <strong>high-stakes</strong> websites. During that time, I had to turn down a lot of friends who needed that same help.
+		</p>
+
+		<hr class="desktop">
+
+		<p>
+			But now I'm working independently as a <b>freelancer</b> and <b>contractor</b>, and I can <strong><i>finally</i> say yes!</strong>
+		</p>
 	</header>
 
 	<div class="content">
-		<p>
-			You know that friend knows a lot about websites but never had the time to jump in because
-			they were busy at a <strong>nine-to-five</strong>?
-		</p>
-
-		<p>That was <strong>me.</strong></p>
-
-		<p>
-			For over a <strong>decade</strong>, I honed my craft working with <strong>agencies</strong> and
-			<strong>companies</strong>, helping them build <strong>high-performance</strong> sites. And during
-			that time, I had to <strong>turn down</strong> a lot of friends who needed that same help.
-		</p>
-
-		<p>
-			But now, as a <i>freelancer</i>, <strong>I can say yes</strong>.
-		</p>
 
 		<ul class="feature-icons">
-			<li class="icon solid fa-layer-group">Static sites</li>
-			<li class="icon solid fa-wallet">Budget sites</li>
-			<li class="icon brands fa-wordpress-simple">WordPress sites</li>
-			<li class="icon solid fa-tachometer-alt">Core Web Vitals</li>
-			<li class="icon solid fa-search">SEO optimized sites</li>
-			<li class="icon solid fa-check-circle">Expertise &amp; confidence</li>
-			<li class="icon solid fa-chalkboard-teacher">Guidance &amp; training</li>
-			<li class="icon solid fa-comments">Real talk &amp; real support</li>
-			<li class="icon solid fa-stream">Simplicity &amp; simple process</li>
-			<li class="icon solid fa-ban"><i>No BS</i></li>
+			<li class="icon solid fa-layer-group">Static websites</li>
+			<li class="icon brands fa-wordpress-simple">WordPress websites</li>
+			<li class="icon solid fa-wallet">Budget-friendly sites</li>
+			<li class="icon solid fa-plug">WordPress plugins</li>
+			<li class="icon solid fa-tachometer-alt">
+<span class="tooltip-text" aria-label="Click for more info.">
+	Performance-first
+	<span class="modal loaded tooltip" tabindex="-1" role="tooltip">
+		<span class="tooltip-content inner">
+			
+				<p><strong>Performance-first development</strong> means your site stays <strong>fast from start to finish</strong> because performance is prioritized throughout the entire project, including <strong>Core Web Vitals</strong>, <strong>SEO and indexability</strong>, <strong>fast server configuration</strong>, <strong>semantic markup</strong>, and <strong>clean, efficient code</strong> that scales without becoming fragile or bloated.</p>
+
+			
+		</span>
+	</span>
+</span>
+</li>
+			<li class="icon solid fa-chalkboard-teacher">Training &amp; support</li>
+			<li class="icon solid fa-stream">Simple process</li>
+			<li class="icon solid fa-handshake">Long-term partnership</li>
+			<li class="icon solid fa-bullseye">Straight talk</li>
+			<li class="icon solid fa-award">Decade of experience</li>
 		</ul>
 
-	</div>
-</section>
+		<ul class="pills">
+			<!-- Languages -->
+			<li class="hl">HTML</li>
+			<li class="hl">CSS</li>
+			<li class="hl">JavaScript</li>
+			<li class="hl">PHP</li>
+			<li>jQuery</li>
+			<li>TypeScript</li>
 
-<!-- About/Mission Section -->
-<section id="about" class="section">
-	<header>
-		<h2><a href="#about" class="scrolly">About</a></h2>
-		<p class="mobile"><a href="#work" class="button small">Skip<i aria-hidden="true" class="fas fa-arrow-down bounce small"></i></a></p>
-	</header>
+			<!-- Frameworks / UI -->
+			<li>React</li>
+			<li>Next.js</li>
+			<li>Tailwind CSS</li>
 
-	<div class="content">
+			<!-- CMS / Static Generators -->
+			<li class="hl">WordPress</li>
+			<li>Jekyll</li>
+			<li>Hugo</li>
 
-	<p>
-		I have spent over a <strong>decade</strong> working with <strong>agencies</strong> and <strong>companies</strong>, building websites and software where the <strong>stakes</strong> were high and mistakes were expensive. That taught me where projects quietly drift, where costs pile up, and where small compromises turn into big problems later.
-	</p>
+			<!-- Databases -->
+			<li>Databases</li>
+			<li class="hl">SQLite</li>
+			<li>MySQL</li>
 
-	<p>
-		When you work with me, my goal is simple: you should feel <strong>confident</strong> you are making the <strong>right decisions</strong>. Confident that <strong>performance</strong> is not being sacrificed, that <strong>unnecessary shortcuts</strong> are not being made, and that your <strong>time</strong> is not being wasted on anything <strong>unnecessary</strong>.
-	</p>
+			<!-- Platform / Runtime -->
+			<li>Node.js</li>
 
-	<p>
-		I care deeply about <strong>quality</strong>. I believe <strong>simple</strong> solutions outperform complicated ones, and most websites have no reason not to <strong>perform well</strong>, except that nobody is taking the <strong>care</strong> to protect that along the way. Websites should <strong>perform</strong>, <strong>behave predictably</strong>, and most importantly, <i>do what you actually need them to do.</i>
-	</p>
+			<!-- APIs / Version Control -->
+			<li>REST</li>
+			<li class="hl">Git &amp; VCS</li>
 
-	<p>
-		I am <strong>direct</strong>, <strong>honest</strong>, and comfortable <strong>speaking up</strong> when it matters, so decisions stay aligned with your <strong>goals</strong> and <strong>mission</strong>.
-	</p>
+			<!-- Performance / SEO -->
+			<li class="hl">Core Web Vitals</li>
+			<li class="hl">SEO</li>
+			<li>Accessibility</li>
 
-	<hr>
+			<!-- DevOps / Server -->
+			<li>Build Tooling</li>
+			<li>CI/CD</li>
+			<li class="hl">Linux</li>
+			<li>NGINX</li>
+			<li>Apache</li>
+			<li>Redis</li>
+			<li>Memcached</li>
+			<li>PHP-FPM</li>
+		</ul>
 
-	<p>If you want <strong>straight answers</strong>, someone who works with you <strong>like a friend</strong>, has <strong>deep</strong> web development experience—that is exactly what I aim to be.</p>
-
-		<h3 class="light" id="values"><a href="#values">Principles &amp; Values</a></h3>
+		<h3 id="values" class="light"><a href="#values">Principles &amp; Values</a></h3>
 
 		<ul class="feature-icons">
-			<li class="icon solid fa-book">Stick to the fundamentals</li>
+			<li class="icon solid fa-book">Stick to fundamentals</li>
 			<li class="icon solid fa-bolt">Simple solutions perform</li>
 			<li class="icon solid fa-cog">It should <i>just work</i>
 </li>
-			<li class="icon solid fa-balance-scale">Quality over quantity</li>
+			<li class="icon solid fa-balance-scale">No cutting corners</li>
 			<li class="icon solid fa-tachometer-alt">Performance matters</li>
-			<li class="icon solid fa-broadcast-tower">Communication is oxygen</li>
+			<li class="icon solid fa-broadcast-tower">Communication is key</li>
 			<li class="icon solid fa-comments">Straight talk</li>
-			<li class="icon solid fa-compass">Build with intent</li>
+			<li class="icon solid fa-compass">See it through</li>
 			<li class="icon solid fa-laugh-beam">Results, not checklists</li>
 			<li class="icon solid fa-fist-raised">Be rebellious</li>
 		</ul>
@@ -13567,7 +13620,7 @@ readers do not read off random characters that represent icons */
 <!-- Work/Experience Section -->
 <section id="work" class="distant section">
 
-	<header>
+	<header class="has-skip">
 		<h2><a href="#work">Experience</a></h2>
 		<p class="mobile"><a href="#contact" class="button small">Skip<i aria-hidden="true" class="fas fa-arrow-down bounce small"></i></a></p>
 	</header>
@@ -13760,7 +13813,7 @@ readers do not read off random characters that represent icons */
 		</div>
 
 		<p>
-			I work with anyone who want an <b>experienced developer</b> they can trust to focus on what actually matters —so if that's you, <b>lets talk!</b>
+			If you are looking for <b>that friend who knows websites</b>—someone who can build it, explain it, and be there when you have questions—<b>let's talk!</b>
 		</p>
 
 		<p class="mobile">Send me a message using the form below, or <a href="#contact-other" class="scrolly bold">use these other methods <i aria-hidden="true" class="fas fa-arrow-down"></i></a>.</p>

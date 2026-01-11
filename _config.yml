@@ -1,4 +1,4 @@
-title: "Aubrey Portwood - A developer who helps like a friend would."
+title: "Aubrey Portwood - That friend with serious web experience that's available to help."
 description: "For over a decade, I built websites for agencies and companies and often had to say no when friends asked for help. Now I work directly with people who want honest guidance, clear explanations, and work that actually makes sense for their goals. No fluff, no pressure—just the kind of help you'd expect from someone who's on your side."
 email: "nobody@example.com"
 baseurl: ""
@@ -6,7 +6,7 @@ absolute_url: "https://hire.aubreypwd.com"
 url: "https://hire.aubreypwd.com"
 default_domain: hire.aubreypwd.com
 destination: docs
-job_title: A developer who helps like a friend would
+job_title: That friend with serious web experience that's available to help.
 keywords: custom web development, wordpress expert, wordpress performance, seo expert albuquerque, senior wordpress developer, web developer new mexico, performance web developer, fast website, core web vitals, custom wordpress plugins, albuquerque web developer, wordpress speed optimization, technical seo, php developer, new mexico websites
 exclude:
   - .sublime-workspace

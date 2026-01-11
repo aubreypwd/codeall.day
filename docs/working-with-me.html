@@ -12,7 +12,7 @@
 </script>
 
 
-<title>Aubrey Portwood - A web developer who feels like a friend.. - Working with me</title>
+<title>Aubrey Portwood - That friend who knows a lot about websites.. - Working with me</title>
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -1232,6 +1232,10 @@ input, textarea {
 		list-style: none;
 		margin: 3rem 0;
 		padding-left: 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 
 		ul.feature-icons li {
@@ -1324,7 +1328,7 @@ input, textarea {
 					margin: 0 0 5rem 0;
 				}
 
-				.wrapper .section > header h2 + p {
+				.wrapper .section#intro > header h2 + p {
 					font-family: "Raleway", Helvetica, sans-serif;
 					font-size: 0.8rem;
 					letter-spacing: 0.175em;
@@ -1609,7 +1613,7 @@ input, textarea {
 						justify-self: start;
 						padding: 0;
 						text-align: left;
-						width: 100%;
+						/* width: 100%; */
 					}
 
 						.wrapper .section > header ul.actions {
@@ -2020,7 +2024,7 @@ a.arrow:before {
 /* === The big down arrow === */
 
 body .intro-down-arrow {
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 /* === Layout & Wrapper === */
@@ -2054,10 +2058,6 @@ body .intro-down-arrow {
 .section > header *,
 .section > footer * {
 	color: white;
-}
-
-.wrapper .section > header {
-	width: auto;
 }
 
 .wrapper > .section > .content > .section > header {
@@ -2118,6 +2118,7 @@ label {
 
 header .highlight {
 	text-shadow: none;
+	color: black;
 }
 
 /* === Content === */
@@ -2180,6 +2181,25 @@ input:user-invalid {
 }
 
 /* === Lists === */
+
+ul.pills {
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		padding: 0.3rem 0.7rem;
+		margin: 0.3rem;
+		background-color: #f4f4f4;
+		border-radius: 10px;
+		font-weight: bold;
+		font-size: 0.85rem;
+
+		&.hl {
+			background-color: var(--highlight);
+		}
+	}
+}
 
 ul.feature-icons {
 
@@ -2272,7 +2292,7 @@ img {
 	background-color: var(--highlight);
 	display: inline-block;
 	padding: 0 0.5rem;
-	margin: 0;
+	margin: 0 0.1rem;
 	border-radius: 3px;
 
 	&.no-bg {
@@ -2440,6 +2460,14 @@ nav.navigation {
 
 	@media screen and (min-width: 1152px) {
 
+		ul.feature-icons {
+
+			&:first-child li:nth-child(1),
+			&:first-child li:nth-child(2) {
+				margin-top: 0;
+			}
+		}
+
 		.mobile {
 			display: none !important;
 		}
@@ -2512,6 +2540,18 @@ nav.navigation {
 
 	/* Mobile Only */
 	@media screen and (max-width: 1152px) {
+
+		.modal > .inner {
+			max-width: 100% !important;
+			height: 100% !important;
+		}
+
+		ul.feature-icons {
+
+			&:first-child {
+				margin-top: -3rem;
+			}
+		}
 
 		.desktop {
 			display: none !important;
@@ -2597,7 +2637,7 @@ nav.navigation {
 			text-align: left;
 		}
 
-		.wrapper > .section:not(#intro) > header {
+		.wrapper > .section:not(#intro) > header.has-skip:not(.has-content) {
 
 			display: flex;
 			justify-content: space-between; /* one left, one right */
@@ -2670,7 +2710,7 @@ body.page {
 		}
 	}
 
-	.wrapper .section > header h2 + p {
+	.wrapper .section#intro > header h2 + p {
 		font-family: inherit;
 		font-size: inherit;
 		text-transform: inherit;
@@ -2804,8 +2844,8 @@ body.page {
 	/*font-size: 0.85rem;*/
 	/*line-height: 1rem;*/
 	display: inline;
-	cursor: pointer;
-	border-bottom: 1px dashed #000;
+	cursor: help;
+	border-bottom: 1px dotted #000;
 	text-wrap-style: balance;
 
 	&::after {
@@ -2959,7 +2999,7 @@ body.page {
 			width: 4rem;
 		}
 
-		.modal .inner {
+		.modal > .inner {
 			-moz-transform: translateY(0.75rem);
 			-webkit-transform: translateY(0.75rem);
 			-ms-transform: translateY(0.75rem);
@@ -2969,9 +3009,15 @@ body.page {
 			-ms-transition: opacity 0.25s ease, -ms-transform 0.25s ease;
 			transition: opacity 0.25s ease, transform 0.25s ease;
 			opacity: 0;
+			display: flex;
+			align-items: center;
+
+			& > p {
+				text-align: center;
+			}
 		}
 
-			.modal .inner img {
+			.modal > .inner img {
 				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 				display: block;
 				max-height: 90vh;
@@ -3009,7 +3055,7 @@ body.page {
 			opacity: 0;
 		}
 
-		.modal .inner {
+		.modal > .inner {
 			background-color: white;
 			padding: 2rem 4rem;
 			border-radius: 4px;
@@ -3018,6 +3064,7 @@ body.page {
 			font-weight: 400;
 			line-height: 1.5rem;
 			max-width: 50vw;
+			height: auto;
 			font-size: 1rem;
 			line-height: 1.3rem;
 
@@ -3028,7 +3075,7 @@ body.page {
 		}
 
 	@media screen and (max-width: 1152px) {
-		.modal .inner * {
+		.modal > .inner * {
 			max-width: 100vw;
 		}
 	}
@@ -13310,7 +13357,7 @@ readers do not read off random characters that represent icons */
 	/*input[type=submit].primary, input[type=reset].primary, input[type=button].primary, button.primary, .button.primary{ color: black !important; background-color: white; border: 2px solid black; }*/
 </style>
 
-<meta property="og:title" content="Aubrey Portwood - A web developer who feels like a friend.. - Working with me">
+<meta property="og:title" content="Aubrey Portwood - That friend who knows a lot about websites.. - Working with me">
 <meta property="og:description" content="For over a decade, I built websites for agencies and companies and often had to say no when friends asked for help. Now I work directly with people who want honest guidance, clear explanations, and work that actually makes sense for their goals. No fluff, no pressure—just the kind of help you'd expect from someone who's on your side. - Process for working with me">
 <meta property="og:image" content="images/webp/aubrey-portwood.webp">
 <meta property="og:url" content="working-with-me.html">
@@ -13324,7 +13371,7 @@ readers do not read off random characters that represent icons */
 		"@context": "https://schema.org",
 		"@type": "Person",
 		"name": "Aubrey Portwood",
-		"jobTitle": "A web developer who feels like a friend.",
+		"jobTitle": "That friend who knows a lot about websites.",
 		"url": "working-with-me.html",
 		"image": "images/webp/aubrey-portwood.webp",
 		"homeLocation": {
