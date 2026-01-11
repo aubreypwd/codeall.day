@@ -74,4 +74,53 @@
 		$( '.modal', this ).toggleClass( 'visible' );
 	} );
 
-} )( jQuery );
+	// If you're here you're not a bot.
+	setTimeout(
+		() => {
+			$( window ).on( 'scroll', () => {
+
+				if ( window.realContactInfo ?? false ) {
+					return;
+				}
+
+				if ( true === window.realContactInfoSwitched ?? false ) {
+					return;
+				}
+
+				const el = document.getElementById( 'contact' );
+
+				if ( ! el ) {
+					return;
+				}
+
+				const rect = el.getBoundingClientRect();
+
+				if ( rect.top > window.innerHeight + 300 || rect.bottom < -300 ) {
+					return;
+				}
+
+				window.realContactInfo = true;
+
+				const fuckYouBotsE =
+					String.fromCharCode(97)+String.fromCharCode(117)+String.fromCharCode(98)+String.fromCharCode(114)+
+					String.fromCharCode(101)+String.fromCharCode(121)+String.fromCharCode(112)+String.fromCharCode(119)+
+					String.fromCharCode(100)+String.fromCharCode(64)+String.fromCharCode(105)+String.fromCharCode(99)+
+					String.fromCharCode(108)+String.fromCharCode(111)+String.fromCharCode(117)+String.fromCharCode(100)+
+					String.fromCharCode(46)+String.fromCharCode(99)+String.fromCharCode(111)+String.fromCharCode(109);
+
+				$( '#contact-email' ).attr( 'href', 'mailto:' + fuckYouBotsE ).text( fuckYouBotsE );
+
+				const fuckYouBotsP =
+					String.fromCharCode(56)+String.fromCharCode(48)+String.fromCharCode(56)+String.fromCharCode(50)+
+					String.fromCharCode(54)+String.fromCharCode(57)+String.fromCharCode(51)+String.fromCharCode(48)+
+					String.fromCharCode(57)+String.fromCharCode(52);
+
+				$( '#contact-phone' )
+					.attr( 'href', 'sms:+1' + fuckYouBotsP )
+					.text( '+1 (' + fuckYouBotsP.slice(0,3) + ')-' + fuckYouBotsP.slice(3,6) + '-' + fuckYouBotsP.slice(6) );
+			} );
+		},
+		400 + Math.floor( Math.random() * 1000 )
+	);
+
+	} )( jQuery );
