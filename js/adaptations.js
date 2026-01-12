@@ -147,6 +147,8 @@
 									String.fromCharCode(8210) +
 									fuckYouBotsPhone.slice(6)
 								);
+
+							$( 'p.real-number' ).removeClass( 'hidden' ).find( 'small' ).text( "Yes, this is my actual iPhone cell number." );
 						} );
 					},
 					200 + Math.floor( Math.random() * 800 )
