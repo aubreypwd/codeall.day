@@ -15,8 +15,24 @@
 
 <!-- Inline styles -->
 <style>
-	{% include_relative css/adaptations.css %}
-	{% include_relative css/fontawesome/used.css %}
+	{% assign url_path = page.url | remove_first: '/' | split: '/' %}
+	{% assign path_depth = url_path.size | minus: 1 %}
+	{% if path_depth == 1 %}
+		{% include_relative_safe ../css/adaptations.css %}
+		{% include_relative_safe ../css/fontawesome/used.css %}
+	{% elsif path_depth == 2 %}
+		{% include_relative_safe ../../css/adaptations.css %}
+		{% include_relative_safe ../../css/fontawesome/used.css %}
+	{% elsif path_depth == 3 %}
+		{% include_relative_safe ../../../css/adaptations.css %}
+		{% include_relative_safe ../../../css/fontawesome/used.css %}
+	{% elsif path_depth > 3 %}
+		{% include_relative_safe ../../../../css/adaptations.css %}
+		{% include_relative_safe ../../../../css/fontawesome/used.css %}
+	{% else %}
+		{% include_relative_safe css/adaptations.css %}
+		{% include_relative_safe css/fontawesome/used.css %}
+	{% endif %}
 
 	/* @TODO: Going to need to figure out how to do this: it needs to only be there for lighthouse. */
 	/*input[type=submit].primary, input[type=reset].primary, input[type=button].primary, button.primary, .button.primary{ color: black !important; background-color: white; border: 2px solid black; }*/
