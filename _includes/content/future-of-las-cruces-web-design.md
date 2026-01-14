@@ -2,7 +2,7 @@ Hi, I'm <a href="/" class="bold">Aubrey</a>, a local freelance and contract web 
 
 ---
 
-## The Problem With Traditional WordPress in Las Cruces
+### The Problem With Traditional WordPress in Las Cruces
 
 WordPress still powers many local business websites. It is flexible and familiar, but it comes with structural limits:
 
@@ -26,7 +26,7 @@ A slow site near NMSU or a poorly optimized mobile experience during peak resear
 
 ---
 
-## Headless CMS in Las Cruces: What It Is and Why It Wins
+### Headless CMS in Las Cruces: What It Is and Why It Wins
 
 ### What is a headless CMS?
 
@@ -53,7 +53,7 @@ When your site loads in under one second on mobile, Google notices. So do users.
 
 ---
 
-## Next.js Development in New Mexico: Performance by Design
+### Next.js Development in New Mexico: Performance by Design
 
 Next.js is not a theme or plugin. It is a modern web framework designed for:
 
@@ -74,7 +74,7 @@ For companies operating near White Sands Missile Range, NMSU research facilities
 
 ---
 
-## Behind the Scenes: Infrastructure That Google Actually Rewards
+### Behind the Scenes: Infrastructure That Google Actually Rewards
 
 Most agencies talk about design. High-ranking sites focus on systems.
 
@@ -101,7 +101,7 @@ You fix them with architecture.
 
 ---
 
-## Generative Engine Optimization (GEO): SEO for AI Search
+### Generative Engine Optimization (GEO): SEO for AI Search
 
 Traditional SEO optimizes for links.
 
@@ -141,7 +141,7 @@ That is what modern **Generative Engine Optimization** actually means.
 
 ---
 
-## SEO for Las Cruces Space, Defense, and Agricultural Companies
+### SEO for Las Cruces Space, Defense, and Agricultural Companies
 
 Generic SEO fails in technical industries.
 
@@ -185,7 +185,7 @@ This is where **SEO for Las Cruces space, defense, and agricultural companies** 
 
 ---
 
-## Mobile-First Design Is No Longer Optional
+### Mobile-First Design Is No Longer Optional
 
 Over 65 percent of local searches in Las Cruces now happen on phones.
 
@@ -205,7 +205,7 @@ WordPress tries to patch them later.
 
 ---
 
-## Why Platform Diversification Matters
+### Why Platform Diversification Matters
 
 WordPress is a tool.
 
@@ -222,7 +222,7 @@ Using the right platform for the job produces better rankings, better security, 
 
 ---
 
-## Las Cruces Web Design FAQs
+### Las Cruces Web Design FAQs
 
 ### What is the difference between web design and web development?
 
@@ -269,7 +269,7 @@ For technical, high-growth, or competitive companies in Las Cruces, headless arc
 
 ---
 
-## The Direction Las Cruces Web Design Is Moving
+### The Direction Las Cruces Web Design Is Moving
 
 The local market is changing.
 
@@ -296,5 +296,5 @@ Just tell me 👍
 
 ---
 
-**Ready to work together?** &mdash; <a href="/#contact" class="strong">Contact me</a> and let's get started!
+**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
 

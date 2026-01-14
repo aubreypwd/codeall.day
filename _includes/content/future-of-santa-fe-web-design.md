@@ -2,7 +2,7 @@ Hi, I'm <a href="/" class="bold">Aubrey</a>, a local freelance and contract web 
 
 ---
 
-## The Problem With Traditional WordPress in Santa Fe
+### The Problem With Traditional WordPress in Santa Fe
 
 WordPress still powers many local business websites. It is flexible and familiar, but it comes with structural limits:
 
@@ -26,7 +26,7 @@ A slow site near the Plaza or a poorly optimized mobile experience during touris
 
 ---
 
-## Headless CMS in Santa Fe: What It Is and Why It Wins
+### Headless CMS in Santa Fe: What It Is and Why It Wins
 
 ### What is a headless CMS?
 
@@ -53,7 +53,7 @@ When your site loads in under one second on mobile, Google notices. So do users.
 
 ---
 
-## Next.js Development in New Mexico: Performance by Design
+### Next.js Development in New Mexico: Performance by Design
 
 Next.js is not a theme or plugin. It is a modern web framework designed for:
 
@@ -74,7 +74,7 @@ For companies operating near the state capitol, Canyon Road galleries, governmen
 
 ---
 
-## Behind the Scenes: Infrastructure That Google Actually Rewards
+### Behind the Scenes: Infrastructure That Google Actually Rewards
 
 Most agencies talk about design. High-ranking sites focus on systems.
 
@@ -101,7 +101,7 @@ You fix them with architecture.
 
 ---
 
-## Generative Engine Optimization (GEO): SEO for AI Search
+### Generative Engine Optimization (GEO): SEO for AI Search
 
 Traditional SEO optimizes for links.
 
@@ -141,7 +141,7 @@ That is what modern **Generative Engine Optimization** actually means.
 
 ---
 
-## SEO for Santa Fe Tourism, Government, and Creative Industries
+### SEO for Santa Fe Tourism, Government, and Creative Industries
 
 Generic SEO fails in competitive industries.
 
@@ -185,7 +185,7 @@ This is where **SEO for Santa Fe tourism, government, and creative industries** 
 
 ---
 
-## Mobile-First Design Is No Longer Optional
+### Mobile-First Design Is No Longer Optional
 
 Over 70 percent of local searches in Santa Fe now happen on phones, especially during tourist season.
 
@@ -205,7 +205,7 @@ WordPress tries to patch them later.
 
 ---
 
-## Why Platform Diversification Matters
+### Why Platform Diversification Matters
 
 WordPress is a tool.
 
@@ -222,7 +222,7 @@ Using the right platform for the job produces better rankings, better security, 
 
 ---
 
-## Santa Fe Web Design FAQs
+### Santa Fe Web Design FAQs
 
 ### What is the difference between web design and web development?
 
@@ -269,7 +269,7 @@ For competitive, high-growth, or image-conscious companies in Santa Fe, headless
 
 ---
 
-## The Direction Santa Fe Web Design Is Moving
+### The Direction Santa Fe Web Design Is Moving
 
 The local market is changing.
 
@@ -296,5 +296,5 @@ Just tell me 👍
 
 ---
 
-**Ready to work together?** &mdash; <a href="/#contact" class="strong">Contact me</a> and let's get started!
+**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
 

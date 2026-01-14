@@ -2,7 +2,7 @@ Hi, I'm <a href="/" class="bold">Aubrey</a>, a local freelance and contract web 
 
 ---
 
-## The Problem With Traditional WordPress in Albuquerque
+### The Problem With Traditional WordPress in Albuquerque
 
 WordPress still powers many local business websites. It is flexible and familiar, but it comes with structural limits:
 
@@ -26,7 +26,7 @@ A slow site near Old Town or a poorly optimized mobile experience during Balloon
 
 ---
 
-## Headless CMS in Albuquerque: What It Is and Why It Wins
+### Headless CMS in Albuquerque: What It Is and Why It Wins
 
 ### What is a headless CMS?
 
@@ -53,7 +53,7 @@ When your site loads in under one second on mobile, Google notices. So do users.
 
 ---
 
-## Next.js Development in New Mexico: Performance by Design
+### Next.js Development in New Mexico: Performance by Design
 
 Next.js is not a theme or plugin. It is a modern web framework designed for:
 
@@ -74,7 +74,7 @@ For companies operating near research corridors, Kirtland Air Force Base, or the
 
 ---
 
-## Behind the Scenes: Infrastructure That Google Actually Rewards
+### Behind the Scenes: Infrastructure That Google Actually Rewards
 
 Most agencies talk about design. High-ranking sites focus on systems.
 
@@ -101,7 +101,7 @@ You fix them with architecture.
 
 ---
 
-## Generative Engine Optimization (GEO): SEO for AI Search
+### Generative Engine Optimization (GEO): SEO for AI Search
 
 Traditional SEO optimizes for links.
 
@@ -140,7 +140,7 @@ That is what modern **Generative Engine Optimization** actually means.
 
 ---
 
-## SEO for Albuquerque Biotech and Aerospace Companies
+### SEO for Albuquerque Biotech and Aerospace Companies
 
 Generic SEO fails in technical industries.
 
@@ -174,7 +174,7 @@ This is where **SEO for Albuquerque biotech and aerospace** diverges from basic 
 
 ---
 
-## Mobile-First Design Is No Longer Optional
+### Mobile-First Design Is No Longer Optional
 
 Over 65 percent of local searches in Albuquerque now happen on phones.
 
@@ -194,7 +194,7 @@ WordPress tries to patch them later.
 
 ---
 
-## Why Platform Diversification Matters
+### Why Platform Diversification Matters
 
 WordPress is a tool.
 
@@ -211,7 +211,7 @@ Using the right platform for the job produces better rankings, better security, 
 
 ---
 
-## Albuquerque Web Design FAQs
+### Albuquerque Web Design FAQs
 
 ### What is the difference between web design and web development?
 
@@ -258,7 +258,7 @@ For technical, high-growth, or competitive companies in Albuquerque, headless ar
 
 ---
 
-## The Direction Albuquerque Web Design Is Moving
+### The Direction Albuquerque Web Design Is Moving
 
 The local market is changing.
 
@@ -285,4 +285,4 @@ Just tell me 👍
 
 ---
 
-**Ready to work together?** &mdash; <a href="/#contact" class="strong">Contact me</a> and let's get started!
+**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
