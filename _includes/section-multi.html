@@ -3,8 +3,10 @@
 	<header>
 		<h2><a href="#{{ include.id }}">{{ include.heading }}</a></h2>
 
-		{% if include.header_content %}
+		{% if include.header_content contains ".md" %}
 			{% include md.html md={{ include.header_content }} %}
+		{% else %}
+			{{ include.header_content | markdownify }}
 		{% endif %}
 	</header>
 
