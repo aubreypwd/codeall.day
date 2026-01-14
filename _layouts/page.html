@@ -7,13 +7,13 @@
 
 	<body class="page">
 
-		{% include header.html nav=false %}
+		{% include header.html nav=true %}
 
 		<main class="wrapper" role="main">
 			{{ content }}
 		</main>
 
-		{%  include footer.html %}
+		{% include footer.html %}
 	</body>
 
 	{% include credit.html %}
