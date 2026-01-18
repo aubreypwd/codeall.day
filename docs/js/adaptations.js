@@ -85,6 +85,8 @@
 			return;
 		}
 
+		return;
+
 		import( 'https://openfpcdn.io/botd/v2' )
 			.then( ( Botd ) => Botd.load() )
 			.then( ( botd ) => botd.detect() )
