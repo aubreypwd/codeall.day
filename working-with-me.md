@@ -101,4 +101,4 @@ After that support window, we meet for a quick offboarding chat to recap the pro
 
 ---
 
-Ready to work together? — <a href="{{ site.url }}/#contact" class="strong">let's get started!</a>
+Ready to work together? — <a href="/#contact" class="strong">let's get started!</a>

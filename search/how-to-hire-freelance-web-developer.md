@@ -235,4 +235,4 @@ If you want a straight answer about whether a developer is a good fit, send me t
 
 ---
 
-**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!
+**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!

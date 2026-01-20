@@ -155,4 +155,4 @@ If you want a straight answer about whether you need a rebuild or if fixes would
 
 ---
 
-**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!
+**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!

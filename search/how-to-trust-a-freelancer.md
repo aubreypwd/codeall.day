@@ -47,4 +47,4 @@ If you're looking for a partner who values **reliability, communication, and res
 
 ---
 
-**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!
+**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
