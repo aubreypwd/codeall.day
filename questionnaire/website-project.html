@@ -13,13 +13,10 @@ sent_message: The following information was successfully sent.
 {% include form/common/who.html %}
 {% include form/common/about-you-and-your-brand.html %}
 {% include form/common/project.html %}
-{% include form/common/goals-and-success.html %}
-{% include form/common/results-and-measurement.html %}
 {% include form/common/competition-and-positioning.html %}
-{% include form/common/constraints-and-logistics.html %}
 {% include form/common/your-technical-background.html %}
 
-<!-- Your Website -->
+<!-- Your website -->
 
 {% include form/heading.html content="Your website" %}
 
@@ -35,11 +32,11 @@ sent_message: The following information was successfully sent.
 {% include form/textarea.html label="What pages or sections must your site have?" placeholder="How many pages do you think? A guess is okay." required=true %}
 
 <!-- Content and maintenance -->
-{% include form/choice.html label="How often do you see content changing on your website?" choices="Daily,Weekly,Monthly,Very Rarely" required=true %}
+{% include form/choice.html label="How often do you see content changing on your website?" choices="Not sure,Daily,Weekly,Monthly,Very Rarely" required=true %}
 {% include form/textarea.html label="Who will be in charge of changing the content on your site?" required=true %}
 {% include form/textarea.html label="Do you already have content?" placeholder="Where is it? If not, how do you intend to develop the content for the website?" required=true %}
-{% include form/choice.html label="Are you intending to input all your content on your website, or do you need help with that?" choices="Yes, I'm intending to do it myself or with my team,No, I need help getting initial content on the page" required=true %}
-{% include form/choice.html label="Do you need blogging or a way to publish news?" choices="Yes,No" required=true %}
+{% include form/choice.html label="Are you intending to input all your content on your website, or do you need help with that?" choices="Yes—I'm intending to do it myself or with my team,No—I need help getting initial content on the page" required=true %}
+{% include form/choice.html label="Do you need blogging or a way to publish news?" choices="Yes,No,Not sure" required=true %}
 
 <!-- Marketing and traffic plan -->
 {% include form/textarea.html label="How do you plan to attract visitors outside of search engines?" placeholder="E.g. social, word-of-mouth, ads, etc." required=true %}
@@ -51,3 +48,5 @@ sent_message: The following information was successfully sent.
 {% include form/hr.html %}
 
 {% include form/common/comments.html %}
+
+{% include form/paragraph.html content="Thank you for taking the time to fill out this questionnaire, when youre ready just click **Submit.**" %}

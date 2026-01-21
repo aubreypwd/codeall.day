@@ -4,4 +4,4 @@ To make our next meeting more productive, please answer these questions ahead of
 
 Answer as best you can. There are no wrong answers, and everything you share is helpful. You will get a copy of your responses for your records.
 
-**Your input is saved automatically.** You can always come back to this form on the **same computer and browser** and your inputs will be there.
+**Your input is saved automatically.** If you navigate away, you can always come back to this form on the **same computer and browser** and your inputs will be there.

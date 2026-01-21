@@ -1,13 +1,21 @@
 {% include form/heading.html content="About you and your brand" %}
 
+
 {% include form/textarea.html label="Describe yourself or organization in a few sentences." required=true %}
-{% include form/textarea.html label="What problems do you or will this project solve?" placeholder="How will this project impact your customers or visitors?" required=true %}
-{% include form/textarea.html label="What about your background or past sets you apart from others?" required=true %}
-{% include form/textarea.html label="How would you describe the feeling customers get when working with you?" required=true %}
 {% include form/text.html label="Do you have a slogan or tagline?" required=true %}
-{% include form/textarea.html label="Describe your ideal customers." placeholder="Income, interests, gender, age, device habits." required=true %}
+
+{% include form/textarea.html label="What are your business and/or personal values?" required=true %}
+{% include form/textarea.html label="What drives you?" placeholder="Example: Income, financial independence, customer impact, etc." required=true %}
+{% include form/textarea.html label="What is in the way of achieving your future goals right now?" required=true %}
+
+{% include form/textarea.html label="Why does your business or mission exist?" required=true %}
+{% include form/textarea.html label="What about your background or past sets you apart from others?" required=true %}
 {% include form/textarea.html label="What would current customers (or friends) say about you or your business?" required=true %}
+{% include form/textarea.html label="How would you describe the feeling customers get when working with you?" required=true %}
+{% include form/textarea.html label="Describe your ideal customers." placeholder="Income, interests, gender, age, device habits." required=true %}
 {% include form/textarea.html label="What about your current brand works really well right now?" placeholder="We want to keep this around." required=true %}
-{% include form/textarea.html label="What's the most frustrating part of your current situation?" required=true %}
-{% include form/textarea.html label="Are there any things other businesses are doing that you'd like to try?" required=true %}
-{% include form/textarea.html label="Are there any trends, platforms, or tech you are interested in exploring with this project?" required=true %}
+
+{% include form/check.html label="What tools do you use to run your current business?" choices="Social Media (Facebook/Instagram/X/Twitter/etc),A current website,Google Analytics (or similar),CRM (Customer Relationship Management),WordPress,Calendar systems,Booking systems,Ads (purchased),Ads (presented on the site),Sales calls,Referral systems and/or affiliate systems,Chatbots,Support ticket systems,Sales funnels,Shipments (if you ship items yourself)" required=true %}
+{% include form/textarea.html label="What's the most frustrating part of your mission or business?" required=true %}
+
+{% include form/textarea.html label="What are your &quot;no-no's?&quot; What are your deal-breakers?" required=true %}
