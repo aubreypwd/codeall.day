@@ -61,7 +61,7 @@
 						{% endif %}
 
 						<input type="hidden" name="access_key" value="{{ page.access_key }}">
-						<input type="hidden" name="redirect" value="{{ page.url }}/?sent">
+						<input type="hidden" name="redirect" value="{{ page.url | absolute_url }}/?sent">
 						<input type="hidden" name="subject" value="{{ page.subject | default: 'Form submission from ' | append: page.url }}">
 
 						<div class="fields">
