@@ -158,4 +158,7 @@
 			.catch( ( e ) => console.log( e ) );
 	} );
 
+	// Make sure forms save to storage so they are there when you come back!
+	$( document ).ready( () => Savior.init( { selector: 'form', saveDelayMs: 100 } ) );
+
 } )( jQuery );

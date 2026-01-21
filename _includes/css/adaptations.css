@@ -804,6 +804,12 @@ input, textarea {
 		& .required {
 			color: #f44e4e;
 		}
+
+		.field.heading:not(:first-child) h3 {
+			border-top: 1px solid #eee;
+			margin-top: 2rem;
+			padding-top: 4rem;
+		}
 	}
 
 		form > :last-child {

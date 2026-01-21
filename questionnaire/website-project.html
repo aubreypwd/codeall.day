@@ -2,43 +2,52 @@
 layout: form
 title: Website project questionnaire
 description: Website project questionnaire
-heading_content: |
-  This questionnaire was sent to you by **[Aubrey Portwood](https://hire.aubreypwd.com)**
-
-  Answering these questions during a normal meeting would make any meeting go on for hours. By answering these now, you're going to make our next meeting much more productive.
-
-  It is lengthly, about **60 questions**—it will take about **30 minutes**—be prepared to sit down and do it all in one sitting. You'll get a copy of your answers to you and you can use it however you'd like.
-
-  Just answer every question to the best of your ability—there are no wrong answers—every answer is helpful!
+heading_content_md: form/questionnaire.md
 sitemap: false
 access_key: 18ec33e5-254b-4f41-baba-528eb5b56724
+sent_message: The following information was successfully sent.
 ---
 
-{% include form/common/who.html %}
+<!-- Common sections -->
 
+{% include form/common/who.html %}
+{% include form/common/about-you-and-your-brand.html %}
 {% include form/common/project.html %}
 {% include form/common/goals-and-success.html %}
-{% include form/common/about-you-and-your-brand.html %}
 {% include form/common/results-and-measurement.html %}
 {% include form/common/competition-and-positioning.html %}
-{% include form/common/marketing-and-discovery.html %}
 {% include form/common/constraints-and-logistics.html %}
 {% include form/common/your-technical-background.html %}
 
+<!-- Your Website -->
+
 {% include form/heading.html content="Your website" %}
 
+<!-- Inspiration and direction -->
 {% include form/textarea.html label="List at least three websites you like and why you like them." placeholder="Or, brands you really love the look and feel of." required=true %}
 {% include form/textarea.html label="What elements or content do you NEVER want on your site and why?" placeholder="E.g. ads, political content, etc." required=true %}
 
+<!-- SEO and search intent -->
 {% include form/textarea.html label="What words or phrases would you use to search for your site or business?" required=true %}
 {% include form/textarea.html label="Rank what you think your top three most important search terms are." required=true %}
+
+<!-- Site structure -->
 {% include form/textarea.html label="What pages or sections must your site have?" placeholder="How many pages do you think? A guess is okay." required=true %}
 
+<!-- Content and maintenance -->
 {% include form/choice.html label="How often do you see content changing on your website?" choices="Daily,Weekly,Monthly,Very Rarely" required=true %}
 {% include form/textarea.html label="Who will be in charge of changing the content on your site?" required=true %}
 {% include form/textarea.html label="Do you already have content?" placeholder="Where is it? If not, how do you intend to develop the content for the website?" required=true %}
 {% include form/choice.html label="Are you intending to input all your content on your website, or do you need help with that?" choices="Yes, I'm intending to do it myself or with my team,No, I need help getting initial content on the page" required=true %}
 {% include form/choice.html label="Do you need blogging or a way to publish news?" choices="Yes,No" required=true %}
 
+<!-- Marketing and traffic plan -->
+{% include form/textarea.html label="How do you plan to attract visitors outside of search engines?" placeholder="E.g. social, word-of-mouth, ads, etc." required=true %}
+
+<!-- Selling and features -->
 {% include form/textarea.html label="Are you planning to sell products or use eCommerce?" placeholder="Describe the process you have in mind. How do you envision people buying and receiving products?" required=true %}
 {% include form/check.html label="Your website will need:" placeholder="If you even think you might need it, check it. We'll work out the details later." choices="Online Payments,Physical products that are shipped,Downloadable products,Contact Forms,Newsletters,Forums,Membership Capabilities,Quizzes and other similar lead magnets,Analytics (site traffic tracking),Booking/reservation tools,Forms (other than contact),Galleries,Popups,Sales campaigns (e.g. Black Friday),Email campaigns,Private or internal content" required=true %}
+
+{% include form/hr.html %}
+
+{% include form/common/comments.html %}

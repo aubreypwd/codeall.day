@@ -1,1 +1,1 @@
-<div class="field"><h3>{{ include.content }}</h3></div>
+<div class="field heading"><h{{ include.level | default: 3 }}>{{ include.content }}</h{{ include.level | default: 3 }}></div>
