@@ -9,45 +9,47 @@ heading_content: |
 id: performance-optimization
 sitemap: true
 shift: true
-navigation: false
+navigation: true
 ---
 
 # Performance First
 
-Websites are inherently simple and built to move quickly. The browsers, protocols, and networks powering the World Wide Web were designed to be efficient, yet so many projects layer on complexity that drags performance down.
+Websites are inherently simple and built to move quickly. The browsers, protocols, and networks powering the web were designed to be efficient, yet so many projects layer on complexity that drags performance down.
 
-I believe that's avoidable—and that intentional performance optimization should lead every project I touch.
+Performance should be assumed from the start—not an extra sprint at the end. When everything is filtered through that expectation, you ship work that feels fast because the web was meant to be fast.
 
-Whether you're building a brochure site, a product dashboard, or anything in between, speed matters. I call this approach **Performance-first**: it means we make choices that let the web do what it was built to do, and I keep those choices sacrosanct throughout every engagement.
+I call this mindset **Performance-first**: treat every decision as a chance to honor the web's proginal design, so the final experience doesn't require retroactive fixes to feel right.
 
 ## Continuous Core Web Vitals validation
 
-**Core Web Vitals** isn't a checkbox for launch day. I monitor metrics every step of the way so the work is always trending toward a fast, smooth experience. That prevents surprises and keeps the finished product in a performant state from the very first build.
+**Core Web Vitals** isn't a checkbox on launch day. I've been through builds that save it for the end only to cause panic during what should be a smooth and painless launch.
+
+Keeping those metrics healthy throughout the build prevents performance debt from growing and ensures the first version already feels smooth.
 
 ## Selective tooling
 
-No! You don't need React, WordPress, or other heavy frameworks for a simple web experience. I strip away unnecessary layers and lean on the leanest toolset possible for each project. The fewer abstractions, the faster—and fewer places for bugs and bloat to hide.
+Don't reach for React, WordPress, or heavy frameworks unless the project truly benefits from them. Leaner tech stacks (like static sites, Vanilla JS, etc) leave less room for bloat, fewer dependencies, and a clearer path to speed.
 
 ## Top-tier hosting and server tuning
 
-I work with the hosts that actually care about speed and quality. I know the ones that deliver and the ones that slow you down.
-
-When needed, I can tweak server configurations that most freelancers never touch, ensuring the infrastructure can keep up with the experience.
+Fast experiences need **fast infrastructure**. The best hosts take performance as seriously as designers do, which is why partnering with them—and applying the right server tweaks—is worth the investment.
 
 ## Practical performance from legacy to greenfield
 
-Sometimes I'm handed a slow legacy build or a recently launched site that never met expectations. I dig into what's dragging it down—bad architecture, bloated assets, poor hosting—and focus on removing those blockers so the experience can breathe again.
+Legacy systems and rushed launches often hide bloated assets, messy architecture, and indifferent hosting. Giving any project a performance review highlights what can be removed so the experience finally cleans up and delivers the speed it should have had.
 
 ## Future-proof thinking
 
-Even when I'm not crafting a new site, I keep performance top of mind. Every recommendation, build decision, and review is filtered through a performance lens because I've seen what can happen when it's ignored.
+Every decision—whether a new interaction, animation, or CMS layer—should be measured against how it impacts speed. That's how you keep the experience resilient even as new work is layered on.
 
 ## Dealing with reality
 
-You may already have a website you love whose only flaw is sluggishness. Maybe the team who built it didn't optimize for the web, or you inherited slow infrastructure. My goal isn't to promise miracles, but to identify the real constraints—hosting, assets, configuration—and move the experience as far as possible toward fast.
+Some sites look great but feel slow because the people who built them treated performance as a second thought. That's usually hard to fix—but there are ways to get your sites into situations where they can shine.
 
-Sometimes the answer is a better host. Sometimes it's architectural tweaks. Sometimes it's purging unnecessary dependencies. In every case, the end goal is the same: an experience that feels fast to every visitor, because it is.
+Better hosts, selective tooling, smarter infrastructure, and removing what isn't needed are all ways to get nearer to the fast baseline the web has always been capable of.
 
 ---
 
-**Performance** shouldn't be an afterthought—it's how I approach every request, every rebuild, and every review. If you want a website that feels like the web was meant to feel, let's talk about how we can keep speed at the center of it.
+**Performance** shouldn't be an afterthought—it's how every build should be approached. **It's how I approach everything!**
+
+If you want a website that feels like the web was meant to feel, or a solution built with performance in mind, **[let's talk](/#contact)** about keeping speed at the center of it.
