@@ -3,7 +3,7 @@
 	<p>{{ page.description | default: site.description }}</p>
 </header>
 
-{% if include.nav | default: true %}
+{% if true == page.navigation or page.navigation == nil %}
 	<nav class="navigation" role="navigation">
 		<ul>
 			<style>
