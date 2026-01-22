@@ -3,12 +3,12 @@
 	<p>{{ page.description | default: site.description }}</p>
 </header>
 
-{% if true == page.navigation or page.navigation == nil %}
+{% if include.navigation %}
 	<nav class="navigation" role="navigation">
 		<ul>
 			<style>
 				body[data-hash="do"] {
-					nav.navigation a[href="/#do"] {
+					nav.navigation a[href="#do"] {
 						color: var(--dark-primary-bg);
 					}
 				}
@@ -19,17 +19,17 @@
 							background-color: #ffffff1c;
 						}
 
-						nav.navigation a[href="/#do"] {
+						nav.navigation li.do a {
 							color: white;
 						}
 					}
 				}
 			</style>
-			<li class="do"><a href="/#do" class="scrolly">What I do</a></li>
+			<li class="do"><a href="#do" class="scrolly">What I do</a></li>
 
 			<style>
 				body[data-hash="work"] {
-					nav.navigation a[href="/#work"] {
+					nav.navigation a[href="#work"] {
 						color: var(--dark-primary-bg);
 					}
 				}
@@ -40,17 +40,17 @@
 							background-color: #ffffff1c;
 						}
 
-						nav.navigation a[href="/#work"] {
+						nav.navigation li.work a {
 							color: white;
 						}
 					}
 				}
 			</style>
-			<li class="work"><a href="/#work" class="scrolly">Experience</a></li>
+			<li class="work"><a href="#work" class="scrolly">Experience</a></li>
 
 			<style>
 				body[data-hash="contact"] {
-					nav.navigation a[href="/#contact"] {
+					nav.navigation a[href="#contact"] {
 						color: var(--dark-primary-bg);
 					}
 				}
@@ -61,13 +61,13 @@
 							background-color: #ffffff1c;
 						}
 
-						nav.navigation a[href="/#contact"] {
+						nav.navigation li.contact a {
 							color: white;
 						}
 					}
 				}
 			</style>
-			<li class="contact"><a href="{{ site.url }}#contact" class="scrolly">Contact</a></li>
+			<li class="contact"><a href="#contact" class="scrolly">Contact</a></li>
 		</ul>
 	</nav>
 {% endif %}
