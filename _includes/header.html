@@ -24,10 +24,25 @@
 						}
 					}
 				}
-			</style>
-			<li class="do"><a href="#do" class="scrolly">What I do</a></li>
 
-			<style>
+				body[data-hash="contact"] {
+					nav.navigation a[href="#contact"] {
+						color: var(--dark-primary-bg);
+					}
+				}
+
+				@media screen and (min-width: 1152px) {
+					body[data-hash="contact"] {
+						nav.navigation li.contact {
+							background-color: #ffffff1c;
+						}
+
+						nav.navigation li.contact a {
+							color: white;
+						}
+					}
+				}
+
 				body[data-hash="work"] {
 					nav.navigation a[href="#work"] {
 						color: var(--dark-primary-bg);
@@ -46,28 +61,9 @@
 					}
 				}
 			</style>
-			<li class="work"><a href="#work" class="scrolly">Experience</a></li>
-
-			<style>
-				body[data-hash="contact"] {
-					nav.navigation a[href="#contact"] {
-						color: var(--dark-primary-bg);
-					}
-				}
-
-				@media screen and (min-width: 1152px) {
-					body[data-hash="contact"] {
-						nav.navigation li.contact {
-							background-color: #ffffff1c;
-						}
-
-						nav.navigation li.contact a {
-							color: white;
-						}
-					}
-				}
-			</style>
-			<li class="contact"><a href="#contact" class="scrolly">Contact</a></li>
+			<li class="do"><a href="{% if page.layout == 'page' %}/{% endif %}#do" class="scrolly">What I do</a></li>
+			<li class="work"><a href="{% if page.layout == 'page' %}/{% endif %}#work" class="scrolly">Experience</a></li>
+			<li class="contact"><a href="{% if page.layout == 'page' %}/{% endif %}#contact" class="scrolly">Contact</a></li>
 		</ul>
 	</nav>
 {% endif %}
