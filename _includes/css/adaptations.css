@@ -2410,6 +2410,7 @@ img {
 	padding: 0 0.5rem;
 	margin: 0 0.1rem;
 	border-radius: 3px;
+	font-family: 'Helvetica';
 
 	&.no-bg {
 		background-color: transparent;

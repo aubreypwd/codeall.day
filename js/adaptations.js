@@ -1,44 +1,57 @@
 ( function( $ ) {
 
-	// Scrolly.
-	$( 'a[href*="#"]' ).scrolly( { offset: 100 } );
+	// Set the inital data hash.
+	$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
 
-	// Push scroll position into history state on scrolly link click.
-	$( document ).on( 'click', 'a[href^="#"]', function() {
+	$( document ).ready( function() {
 
-		const href = $( this ).attr( 'href' );
+		const lenis  = new Lenis( { autoRaf: true } );
+		const OFFSET = -100; // Offset from the location it's meant to scroll to.
 
-		// Bail if no valid target.
-		if ( href.length > 1 && $( href ).length ) {
+		// Scroll
+		function scroll( hash, push ) {
 
-			history.pushState(
-				{ scrollY: $( href ).offset().top - 100 },
-				'',
-				href
-			);
+			const id = ( hash || '' ).replace( /^#/, '' );
+			const el = id ? document.getElementById( id ) : null;
 
-			$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
+			if ( ! el ) {
+				return;
+			}
+
+			if ( push ) {
+
+				// Keep track of navigation state.
+				history.pushState( null, '', '#' + id );
+			}
+
+			// Scroll to the section.
+			lenis.scrollTo( el, { offset: OFFSET, duration: 1.1 } );
+
+			// Update the data hash (used for styling).
+			$( 'body' ).attr( 'data-hash', id );
 		}
-	} );
 
-	// Disable native scroll restoration so we can handle it manually.
-	if ( 'scrollRestoration' in history ) {
-		history.scrollRestoration = 'manual';
-	}
+		// Find links that link to sections.
+		$( document ).on( 'click', 'a[href^="#"]', function( e ) {
 
-	// Restore scroll position on Back/Forward navigation.
-	window.addEventListener( 'popstate', function( event ) {
+			const hash = this.getAttribute( 'href' );
 
-		if ( event.state && typeof event.state.scrollY === 'number' ) {
+			if ( ! hash || '#' === hash ) {
+				return; // These should continue to do nohthing.
+			}
 
-			$( 'html' ).animate(
-				{ scrollTop: event.state.scrollY - 100 },
-				600,
-				'swing'
-			);
+			if ( ! document.getElementById( hash.slice( 1 ) ) ) {
+				return; // Nothing to scroll to.
+			}
 
-			$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
-		}
+			e.preventDefault();
+
+			scroll( hash, true );
+		} );
+
+		window.addEventListener( 'popstate', () => scroll( window.location.hash, false ) );
+
+		scroll( window.location.hash, false );
 	} );
 
 	// Scroll to the element if there is a hash.
