@@ -1238,6 +1238,7 @@ input, textarea {
 		list-style: none;
 		padding-left: 0;
 		gap: 1rem;
+		flex-wrap: wrap;
 	}
 
 		ul.actions li {
@@ -1265,7 +1266,7 @@ input, textarea {
 					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
-					padding: 1rem 0 0 0;
+					padding: 0;
 					text-align: center;
 					width: 100%;
 				}
@@ -1275,7 +1276,7 @@ input, textarea {
 					}
 
 					ul.actions:not(.fixed) li:first-child {
-						padding-top: 0;
+						/* padding-top: 0; */
 					}
 
 					ul.actions:not(.fixed) li button,
@@ -1388,7 +1389,7 @@ input, textarea {
 			}
 
 			ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
-				/* margin-top: 0; */
+				margin-top: 0;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1439,7 +1440,7 @@ input, textarea {
 			grid-template-rows: 1fr;
 		}
 
-			.wrapper .section:first-child {
+			.wrapper > .section:first-child {
 				margin-top: 0;
 			}
 
@@ -1863,7 +1864,7 @@ input, textarea {
 					}
 
 						.wrapper > .section > .content > article {
-							margin: 4rem 0;
+							margin: 5rem 0 4rem;
 						}
 
 					.wrapper > .section > footer {
@@ -1899,7 +1900,7 @@ input, textarea {
 				}
 
 					.wrapper > .section > .content > article {
-						margin: 3rem 0;
+						/* margin: 3rem 0; */
 					}
 
 				.wrapper > .section > footer {
@@ -1919,7 +1920,7 @@ input, textarea {
 		@media screen and (max-width: 360px) {
 
 			.wrapper .section {
-				margin: 2.25rem 0 0 0;
+				/* margin: 2.25rem 0 0 0; */
 			}
 
 			.wrapper > .section {
@@ -1935,7 +1936,7 @@ input, textarea {
 				}
 
 					.wrapper > .section > .content > article {
-						margin: 2.25rem 0;
+						/* margin: 2.25rem 0; */
 					}
 
 				.wrapper > .section > footer {
@@ -2181,7 +2182,7 @@ body .intro-down-arrow {
 }
 
 .wrapper > .section > .content > .section > header {
-	width: auto;
+	width: 80%;
 }
 
 .wrapper > .section > header > p {
@@ -2321,7 +2322,7 @@ ul.feature-icons {
 
 	font-size: 0.85rem;
 	font-weight: 600;
-	margin: 1rem 0 4.5rem;
+	margin: 1rem 0 3.5rem;
 
 	li {
 		padding: 0.5rem 0 0 4rem;
@@ -2526,7 +2527,7 @@ nav.navigation {
 }
 
 #work .content > .section {
-	margin-top: 3rem;
+	/* margin-top: 3rem; */
 }
 
 #webdevstudios {
@@ -2576,6 +2577,10 @@ p.real-number {
 	/* Desktop Only */
 
 	@media screen and (min-width: 1152px) {
+
+		ul.feature-icons {
+			margin: 1rem 0 4.5rem;
+		}
 
 		.wrapper .section#intro > header h2 + p {
 			font-size: 1rem;
@@ -2668,6 +2673,11 @@ p.real-number {
 		}
 
 		ul.feature-icons {
+
+			&.single,
+			&:last-child {
+				margin: 1rem 0 1.5rem;
+			}
 
 			&:first-child {
 				margin-top: -3rem;
@@ -3236,4 +3246,12 @@ body.page {
 
 [id] {
 	scroll-margin-top: 100px;
+}
+
+.empty * {
+	visibility: hidden;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
