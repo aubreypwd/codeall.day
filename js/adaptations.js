@@ -1,5 +1,18 @@
 ( function( $ ) {
 
+	window.addEventListener( 'pagereveal', function( event ) {
+		if ( ! event.viewTransition ) {
+			return;
+		}
+
+		// "traverse" is back/forward button navigation.
+		if ( event.activation && event.activation.navigationType === 'traverse' ) {
+			event.viewTransition.types.add( 'backwards' );
+		} else {
+			event.viewTransition.types.add( 'forwards' );
+		}
+	} );
+
 	// Set the inital data hash.
 	$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
 
