@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+	<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="{{ site.description }}{% if page.description %} {{ page.description }}{% endif %}">
+	<meta name="keywords" content="{{site.keywords}}{% if page.keywords %},{{ page.keywords }}{% endif %}">
+	<meta name="theme-color" content="#6344c6">
+
+	<link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" fetchpriority="high">
+	<link rel="stylesheet" href="assets/css/style.css" fetchpriority="high">
+	<link rel="stylesheet" href="assets/css/responsive.css" fetchpriority="high">
+	<link rel="stylesheet" href="assets/tweaks/tweaks.css" fetchpriority="high">
+
+	<link rel="stylesheet" href="assets/css/animate.min.css" media="screen and (prefers-reduced-motion: no-preference)">
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+
+	<!-- Social Media Meta -->
+	<meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title}}{% endif %}">
+	<meta property="og:description" content="{{ site.description }}{% if page.description %} - {{ page.description }}{% endif %}">
+	<meta property="og:image" content="{{ 'images/webp/aubrey-portwood.webp' | absolute_url }}">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{{ 'images/webp/aubrey-portwood.webp' | absolute_url }}">
+
+	<!-- Person Schema Information -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Aubrey Portwood",
+			"jobTitle": "{{ site.job_title }}",
+			"url": "{{ page.url | absolute_url }}",
+			"image": "{{ '/images/webp/aubrey-portwood.webp' | absolute_url }}",
+			"homeLocation": {
+				"@type": "Place",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Albuquerque",
+					"addressRegion": "NM",
+					"addressCountry": "US"
+				}
+			},
+			"sameAs": [
+				"https://twitter.com/aubreypwd",
+				"https://linkedin.com/in/aubreypwd",
+				"https://github.com/aubreypwd"
+			]
+		}
+	</script>
+
+	<link rel="manifest" href="{{ 'manifest.json' | absolute_url }}" fetchpriority="low">
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ 'sitemap.xml' | absolute_url }}" fetchpriority="low">
+</head>
+
+<body class="bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light"
+	style="background-image: url(assets/images/pattern-bg.png);">
+	<main>
+		{% include page_loader.html %}
+		{% include header.html %}
+		{% include side_panel.html %}
+
+		<section>
+			<div class="w-100 pt-60 pb-130 position-relative">
+				<div class="container">
+					<div class="resume-wrapper d-flex justify-content-between position-relative w-100">
+						{% include sidebar.html %}
+						<div class="resume-content d-flex flex-column">
+							<div class="theiaStickySidebar">
+								{{ content }}
+							</div>
+						</div><!-- Resume Content -->
+					</div><!-- Resume Wrapper -->
+				</div>
+			</div>
+		</section>
+	</main><!-- Main Wrapper -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.fancybox.min.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/ResizeSensor.min.js"></script>
+	<script src="assets/js/theia-sticky-sidebar.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

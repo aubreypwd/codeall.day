@@ -1,0 +1,28 @@
+{% comment %}
+
+Note: I can only have up to (4) items before things get tricky.
+
+{% endcomment %}
+
+{% assign count = include.facts.size %}
+{% assign col = 12 | divided_by: count %}
+
+<div class="fun-fact-boxes mt-90 round15 position-relative w-100">
+	<div class="row mrg">
+
+		{% for box in include.facts %}
+			{% assign delay = forloop.index0 | times: 2 | plus: 2 | divided_by: 10.0 %}
+
+			<div class="col-md-6 col-sm-6 col-lg-{{ col }} wow fadeIn"
+					data-wow-duration="1s"
+					data-wow-delay=".2s">
+
+				<div class="fun-fact-box d-flex flex-column align-items-start position-relative w-100">
+					<span>{{ box.label }}</span>
+					<h3 class="mb-0 fw-normal sz-30">{{ box.value }}</h3>
+				</div>
+
+			</div>
+		{% endfor %}
+	</div>
+</div>

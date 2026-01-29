@@ -1,0 +1,24 @@
+<h2 class="mb-0 fw-normal sz-55 wow fadeInUp" data-wow-duration=".5s"
+	data-wow-delay=".2s">{{ include.content.title }}</h2>
+
+{% if include.content.description %}
+	<p class="mb-0 wow fadeInUp" data-wow-duration=".5s"
+		data-wow-delay=".4s">{{ include.content.description }}</p>
+{% endif %}
+
+{% if include.content.cta1_title or include.content.cta2_title %}
+	<div class="intro-btns d-flex align-items-center w-100 wow fadeInUp"
+		data-wow-duration=".5s" data-wow-delay=".6s">
+
+		{% if include.content.cta1_title and include.content.cta1_href %}
+			<a class="theme-btn position-relative overflow-hidden round10"
+				href="{{ include.content.cta1_href }}" title="{{ include.content.cta1_title }}"><i
+					class="far fa-{{ include.content.cta1_fa }}"></i>{{ include.content.cta1_title }}</a>
+		{% endif %}
+
+		{% if include.content.cta2_title and include.content.cta2_href %}
+			<a class="simple-link" href="{{ include.content.cta2_href }}" title="{{ include.content.cta2_title }}"><i
+					class="fas fa-{{ include.content.cta2_fa }} round5"></i>{{ include.content.cta2_title }}</a>
+		{% endif %}
+	</div><!-- Intro Btns -->
+{% endif %}

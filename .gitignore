@@ -6,3 +6,5 @@
 docs/CONTENT_STYLE_GUIDE.md
 .cursor/plans
 _site
+.vscode*
+.sublime*

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section>
+	<div class="position-relative w-100">
+		<div
+			class="intro-wrapper d-flex flex-column align-items-start position-relative w-100">
+			<div class="intro-box d-flex flex-column align-items-start position-relative w-100">
+				{% include pill.html content="Introduction" %}
+				{% include intro_box.html content=page.intro_box %}
+			</div><!-- Intro Box -->
+
+			{% include fun_facts_boxes.html facts=page.fun_facts_boxes %}
+	</div>
+</section>

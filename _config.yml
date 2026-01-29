@@ -1,9 +1,7 @@
+url: "https://hire.aubreypwd.com"
+baseurl: "/"
 title: "Aubrey Portwood - Freelancer/Contractor - I want to be your goto web guy."
 description: "For over a decade, I built websites and shipped high-stakes solutions for agencies and companies. Now I work independently as a freelancer/contractor, bringing that same experience directly to people and businesses who need a trusted web development guy in their corner. Someone who cuts through the hype, explains things clearly, and helps you build practical solutions that actually fit your mission and goals. No BS, no pressure—just solid work and honest guidance from someone who's seen it all."
-url: "https://hire.aubreypwd.com"
-baseurl: ""
-default_domain: hire.aubreypwd.com
-job_title: Freelancer/Contractor, I want to be your goto web guy.
 keywords: WordPress developer, custom web development, senior WordPress developer, freelance web developer, contract web developer, WordPress contractor, WordPress freelancer, Albuquerque web developer, web developer New Mexico, performance web developer, WordPress performance optimization, fast website development, core web vitals optimization, technical SEO support, search visibility optimization, WordPress custom plugins, website help & support, clear development guidance, practical web solutions, honest web developer, straight talk web help, long-term web support, developer in your corner, friendly web developer
 exclude:
   - .sublime-*
@@ -11,6 +9,7 @@ exclude:
   - agents/
   - .cursor*
   - exclude/
+  - resources/
 timezone: America/Denver
 plugins:
   - jekyll-last-modified-at
