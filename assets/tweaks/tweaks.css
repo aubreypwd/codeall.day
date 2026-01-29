@@ -20,6 +20,7 @@ body {
 
 .resume-info {
 	/* min-height: 87vh; */
+	gap: 1rem;
 }
 
 h2 b,
@@ -42,4 +43,8 @@ h2 i {
 	@media (max-width: 770px) {
 		font-size: 3.4rem;
 	}
+}
+
+.hidden {
+	display: none !important;
 }

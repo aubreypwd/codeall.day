@@ -1,11 +1,13 @@
 {% if include.sidebar or page.sidebar or page.sidebar == nil %}
-	<div class="resume-sidebar d-flex flex-column position-sticky">
+	<div class="resume-sidebar d-flex flex-column position-sticky mt-auto mb-auto wow bounceInLeft"
+		data-wow-duration="0.8s"
+		data-wow-delay="0.5s">
 		<div class="theiaStickySidebar">
-			<div class="resume-info round50 d-flex flex-column position-relative w-100 justify-content-between">
+			<div class="resume-info round50 d-flex flex-column position-relative w-100">
 
 				<!-- User Image -->
 				{% if include.user_image_src or page.sidebar.user_image_src %}
-					<div class="user-img round40 overflow-hidden position-relative w-100">
+					<div class="user-img round40 overflow-hidden position-relative w-100 mb-0">
 						<img class="img-fluid w-100"
 								 src="{{ include.user_image_src | default: page.sidebar.user_image_src | default: 'assets/images/resources/user-img.png' }}"
 								 alt="{{ include.user_image_alt | default: page.sidebar.user_image_alt | default: 'Profile Image' }}"
@@ -13,20 +15,30 @@
 					</div>
 				{% endif %}
 
-				<!-- User info -->
-				{% if include.user_info or page.sidebar.user_info %}
-					<div class="user-info d-flex flex-column align-items-start w-100">
-						{{ include.user_info | default: page.sidebar.user_info }}
-					</div>
-				{% else %}
-					<div class="user-info d-flex flex-column align-items-start w-100">
-						<a href="mailto:hello@ikonicwebs.co">hello@ikonicwebs.co</a>
-						<span>Base in 2489 Locust, USA</span>
-						<p class="mb-0">
-							&copy; 2023 <a href="index.html">ikonicwebs</a>. All Rights Reserved
-						</p>
+				<!-- Messages -->
+				{% assign messages = include.messages | default: page.sidebar.messages %}
+				{% if messages %}
+					<div class="overflow-auto chat">
+						<div class="mine messages">
+							{% for msg in messages %}
+								{% assign delay = forloop.index0 | times: 4.2 %}
+								<div class="message last wow fadeIn"
+									data-wow-duration="0.2s"
+									data-wow-delay="{{ delay }}s">
+									{{ msg | markdownify | remove: '<p>' | remove: '</p>' }}
+								</div>
+							{% endfor %}
+						</div>
 					</div>
 				{% endif %}
+
+				<div class="user-info d-flex flex-column align-items-start w-100 hidden">
+					<a href="mailto:hello@ikonicwebs.co" title="">hello@ikonicwebs.co</a>
+					<span>Base in 2489 Locust, USA</span>
+					<p class="mb-0">&copy; 2023 <a href="index.html" title="">ikonicwebs</a>. All
+							Rights
+							Reserved</p>
+				</div><!-- User Info -->
 
 				<!-- Social links -->
 				{% if include.social or page.sidebar.social %}
