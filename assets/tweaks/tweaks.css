@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+	--scheme2: #198cff;
+  --Bricolage-Grotesque: "Lexend", sans-serif, "Bricolage Grotesque", sans-serif;
+}
+
 body {
 	min-height: 100vh;
 }
@@ -19,4 +29,8 @@ h2 strong,
 h2 em,
 h2 i {
 	color: var(--scheme2);
+}
+
+.simple-link {
+	text-decoration: none;
 }
